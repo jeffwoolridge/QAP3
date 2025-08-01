@@ -6,7 +6,7 @@ function NeighborsA({ countries, getCountryNameByCCA3 }) {
 
       {/* Map through the countries array and filter neighbors starting with "I" */}
       {countries.map((country) => {
-        const neighborsWithA = country.borders
+        const neighborsWithI = country.borders
           ? country.borders
               .map((code) => getCountryNameByCCA3(code))
               .filter((name) => name && name.startsWith("I"))
@@ -42,7 +42,7 @@ function NeighborsA({ countries, getCountryNameByCCA3 }) {
             />
             <p><strong>Neighbors (I):</strong></p>
             <ul>
-              {neighborsWithA.map((name) => <li key={name}>{name}</li>)}
+              {neighborsWithI.map((name) => <li key={name}>{name}</li>)}
             </ul>
           </div>
         );
