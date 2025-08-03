@@ -2,7 +2,7 @@
 // App for Filter countries by neighbors starting with A or I
 // Created by: Jeff Woolridge
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import NeighborsA from "./components/NeighborsA";
 import NeighborsI from "./components/NeighborsI";
 
